@@ -7,7 +7,7 @@ import { fromJS } from 'immutable'
 const initialState = fromJS({
     entities : {},
     isLoading : true,
-    departments : {} 
+    // departments : {} 
 })
 
 function departments(state = initialState, action){
