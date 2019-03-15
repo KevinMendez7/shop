@@ -7,7 +7,7 @@ export const loginService = (username, password, getHash = true) => {
         body: JSON.stringify({ username, password, getHash})
     };
 
-    return fetch(`https://0393d588.ngrok.io/api/customers/login`, requestOptions)
+    return fetch(`https://oobie92.com/api/customers/login`, requestOptions)
         .then(handleResponse)
         .then(user => {
             localStorage.setItem('user', JSON.stringify(user));

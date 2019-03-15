@@ -8,7 +8,7 @@ export const getReviews = (id) => {
         headers : {"Content-Type": "application/json"}
     }
 
-    return fetch(`https://67936a18.ngrok.io/api/products/${id}/reviews`, requestOptions).then(handleResponse)
+    return fetch(`https://oobie92.com/api/products/${id}/reviews`, requestOptions).then(handleResponse)
 }
 
 
@@ -20,7 +20,7 @@ export const addReview = (item) => {
         body : JSON.stringify(item)
     }
 
-    return fetch('https://67936a18.ngrok.io/api/products/${id}/reviews', requestOptions).then(handleResponse)
+    return fetch('https://oobie92.com/api/products/${id}/reviews', requestOptions).then(handleResponse)
 }
 
 export const deleteReview = (item) => {

@@ -7,9 +7,7 @@ export const getAllProducts = (page) => {
         headers : { 'Content-Type' : 'application/json' }
     }
 
-    return fetch(`https://67936a18.ngrok.io/api/products`, requestOptions).then(handleResponse)
-    // return fetch(`https://oobie92.com/api/products?page=${page}`, requestOptions).then(handleResponse)
-    // return fetch(`https://backendapi.turing.com/products?page=${page}`, requestOptions).then(handleResponse)
+    return fetch(`https://oobie92.com/api/products?page=${page}`, requestOptions).then(handleResponse)
 }
 
 export const getProductById = id => {
@@ -18,7 +16,7 @@ export const getProductById = id => {
         headers : {"Content-Type" : "application/json"}
     }
 
-    return fetch(`https://67936a18.ngrok.io/api/products/${id}`, requestOptions).then(handleResponse)
+    return fetch(`https://oobie92.com/api/products/${id}`, requestOptions).then(handleResponse)
 
 }
 
@@ -29,6 +27,6 @@ export const getAttributes = id => {
         headers : {"Content-Type" : "application/json"}
     }
 
-    return fetch(`https://67936a18.ngrok.io/api/attributes/idProduct/${id}`, requestOptions).then(handleResponse)
+    return fetch(`https://oobie92.com/api/attributes/idProduct/${id}`, requestOptions).then(handleResponse)
 
 }
