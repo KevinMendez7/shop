@@ -4,7 +4,7 @@ import Icon from '../../icon/Icon';
 
 const Search = (props) => {
     return(
-        <form className='search' action=''  onSubmit={props}>
+        <form className='search' action=''  >
             <div className='search-container'> 
                 <input className='search-input' type='text' placeholder='' name='search'  />
                 <div className='search-hover'>

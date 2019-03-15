@@ -8,17 +8,18 @@ const Catalog = (props) => {
     return(
             <CatalogLayout>
                 {
-                    Object.keys(items).length!=0 ?
+                    Object.keys(items).length!==0 ?
                     Object.keys(items).map((k) => {
                         if(items[k] !== undefined){
                             return(
                                 <ItemCatalogLayout 
                                     key={items[k].product_id} 
                                     item={items[k]} 
-                                    itemClickHandle={props.itemClickHandle} />
+                                    itemClickHandle={props.itemClickHandle}
+                                    addToCart={props.addToCart} />
                             )
                         }
-                    }) : ''
+                    }) : ('')
                 }            
             </CatalogLayout> 
 

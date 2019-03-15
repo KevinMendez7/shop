@@ -7,6 +7,10 @@ export const handleResponse = (response) => {
                 //pendient
             }
 
+            if(response.status === 404){
+                return Promise.resolve([])
+            }
+
             const error = (data && data.message) || response.statusText 
             return Promise.reject(error)
         }
